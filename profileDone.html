@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="profileDone.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Profile Page</title>
 </head>
 <body>
 
      <!-- Navbar -->
   <nav class="navbar">
     <div class="container nav-containe logo">
-        <h2 class="logo-icon">H</h2>
+      <div class="d-flex align-items-center m-0 gap-2">  
+      <h2 class="logo-icon m-0">H</h2>
+        <strong>HelpHub AI</strong>
+        </div>
+
     <div class="nav-links">
       <a href="#">Dashboard</a>
       <a href="#">Onboarding</a>
-      <a href="profile.html" class="active highlight" style="background-color: #13ab9c;">Profile</a>
+      <a href="#" active>Profile</a>
     </div>
     </div>
   </nav>
@@ -28,7 +32,7 @@
   <section class="profile-header container">
     <span>PROFILE</span>
     <h1>Ayesha Khan</h1>
-    <p>Bot <span class="text-light">•</span> Karachi</p>
+    <p>Both <span class="text-light">•</span> Karachi</p>
   </section>
 
   <!-- Main Grid -->
@@ -37,11 +41,9 @@
     <!-- Left Card -->
     <div class="my-card">
 
-        <p class="green">PUBLIC PROFILE</p>
+        <p class="green">Title</p>
 
-        <div class="heading-content">
-            <h2 >Skills and reputation</h2>
-        </div>
+        <input  type="text" >
 
       <div class="my-row">
         <span>Trust score</span>
@@ -55,17 +57,17 @@
 
       <h4 class="fw-bold">Skills</h4>
       <div class="tags">
-        <span>Figma</span>
-        <span>UI/UX</span>
-        <span>HTML/CSS</span>
-        <span>Cerear Guidance</span>
+        <button>Figma</button>
+        <button>UI/UX</button>
+        <button>HTML/CSS</button>
+        <button>Cerear Guidance</button>
       </div>
 
       <h4 class="fw-bold">Badges</h4>
       <div class="tags">
-        <span>Design Ally</span>
-        <span>Past Respondar</span>
-        <span>Top Mentor</span>
+        <button>Design Ally</button>
+        <button>Past Respondar</button>
+        <button>Top Mentor</button>
       </div>
 
     </div>
@@ -94,7 +96,7 @@
       <input type="text" placeholder="Interests">
       </div>
 
-      <button>Save profile</button>
+      <button class="buttonSave">Save profile</button>
     </div>
 
   </section>

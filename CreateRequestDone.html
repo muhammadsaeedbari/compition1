@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CreateRequestDone.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Resuest Page</title>
+</head>
+<body>
+
+     <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-containe logo">
+      <div class="d-flex align-items-center m-0 gap-2">  
+      <h2 class="logo-icon m-0">H</h2>
+        <strong>HelpHub AI</strong>
+        </div>
+
+    <div class="nav-links">
+      <a href="#">Dashboard</a>
+      <a href="exploreDone.html">Explore</a>
+      <a href="CreateRequestDone.html" >Create Request</a>
+    </div>
+    </div>
+  </nav>
+
+<div class="container ">
+    
+ 
+  <!-- Profile Header -->
+  <section class="profile-header container">
+    <span>CREATE REQUEST</span>
+    <h1>Turn a rough problem into a clear help request.</h1>
+    <p>Use built-in AI suggestions for category, urgency, tags, and a stronger description rewrite.</p>
+  </section>
+
+  <!-- Main Grid -->
+  <section class="my-container container">
+
+    <!-- Left Card -->
+    <div class="my-card d-flex flex-column gap-2">
+
+         <div class="first d-flex flex-column gap-2">
+                <label >Title</label>
+        <input type="text" placeholder="Need review on my JavaScript quiz app before submission">
+            </div>
+
+      <div class="first d-flex flex-column gap-2">
+        <label>Description</label>
+        <textarea class=" w-100 mytextarea "placeholder="Explain the challenge, your current progress, deadline, and what kind of help would be useful."></textarea>
+      </div>
+
+      <div class="d-flex gap-2">
+      <div class="first w-50 d-flex flex-column gap-2">
+          <label>Tags</label>
+          <input type="text" placeholder="JavaScript, Debugging, Review">
+      </div>
+
+      <div class="first w-50 d-flex flex-column gap-2">
+        <label >Category</label>
+        
+          <select class=" SelectOpt">
+            <option selected>Web Development</option>
+            <option value="1">Mobile Design</option>
+            <option value="2">Data Science</option>
+          </select>
+
+      </div>
+      </div>
+
+       <div class="first w-50 d-flex flex-column gap-2">
+        <label >Urgency</label>
+        
+          <select class="SelectOpt">
+            <option selected>High</option>
+            <option value="1">Medium</option>
+            <option value="2">Low</option>
+          </select>
+
+      </div>
+
+     
+      <div class="d-flex gap-2">
+        <input class="w-25 rounded-pill p-3 " type="text" placeholder="Apply AI suggestions">
+        <button class="buttonSave  w-25 p-3 rounded-pill border-0">Publish request</button>
+      </div>
+
+     
+       
+     
+
+    </div>
+
+    <!-- Right Card -->
+    <div class="my-card card2">
+        <p class="green">AI ASSISTANT</p>
+      <div class="heading-content">
+        <h2>Smart request guidance</h2>
+      </div>
+      
+      <div class="suggested-item d-flex justify-content-between border-0 pb-2 border-bottom border-secondary-subtle ">
+        <span class="label">Suggested category</span>
+        <span class="value"><b>Community</b></span>
+      </div>
+      
+      <div class="suggested-item d-flex justify-content-between  border-0 pb-2 border-bottom border-secondary-subtle ">
+        <span class="label">Detected urgency</span>
+        <span class="value"><b>Low</b></span>
+      </div>
+      
+      <div class="suggested-item d-flex justify-content-between  border-0 pb-2 border-bottom border-secondary-subtle ">
+        <span class="label">Suggested tags </span>
+        <span class="value"><b>Add more detail for smarter tags</b></span>
+      </div>
+     
+
+      <div class="suggested-item d-flex justify-content-between">
+        <span class="label">Rewrite suggestion </span>
+        <span class="value"><b>Start describing the challenge to generate a stronger version.</b></span>
+      </div>
+
+     
+      <!-- <button class="buttonSave">Publish request</button> -->
+    </div>
+
+    
+
+  </section>
+
+</div>
+
+</div>    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>

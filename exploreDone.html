@@ -7,32 +7,30 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="explore.css" />
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="exploreDone.css" />
   </head>
   <body>
-    <div class="container" >
-    <div class="backg" style="background-color: #f5e9d3; ">
-    <div class="container p-0" >
-      <header class="navbar mynav" style="background-color: #f3efe4;">
-        <div class="logo">
-          <div class="avatar">H</div>
-          <span>HelpHub AI</span>
+      <nav class="navbar ">
+    <div class="container  nav-containe logo">
+      <div class="d-flex align-items-center m-0 gap-2">  
+      <h2 class="logo-icon m-0">H</h2>
+        <strong>HelpHub AI</strong>
         </div>
 
-        <nav style="padding-right:10px"">
-          <a href="#">Dashboard</a>
-          <a class="active" href="explore.html">Explore</a>
-          <a href="leader.html">Leaderboard</a>
-          <a href="#">Notifications</a>
-        </nav>
-      </header>
+    <div class="nav-links">
+      <a href="#">Dashboard</a>
+      <a href="exploreDone.html" active>Explore</a>
+      <a href="CreateRequestDone.html" >Create Request</a>
     </div>
+    </div>
+  </nav>
 
-    <div class="container">
+
+
+    <div class="container p-3">
       <!-- HERO -->
-      <section class="hero">
+      <section class="hero ">
         <p class="breadcrumb">EXPLORE / FEED</p>
         <h1>Browse help requests with filterable community context.</h1>
         <p class="subtext">
@@ -46,49 +44,50 @@
           <section class="content">
             <!-- Left -->
             <div class="card filter col-md-5 gap-5">
-              <div class="dropdown-container">
+              
                 <div>
                   <h4>FILTERS</h4>
                   <h1>Refine the feed</h1>
                 </div>
-                <label for="" class=" pb-5 ms-0">Category</label>
-                <div class="myspace d-flex flex-column gap-5">
-                  <select class="custom-select ps-3 pt-5 pb-5">
-                    <option value="all">All Catagories</option>
+                
+                <div class="h-100 d-flex flex-column justify-content-between">
+                  <label for="" class="ms-0 fs-5 fw-bold">Category</label>
+                  <div class="first  d-flex flex-column gap-2">
+                    <select class=" SelectOpt p-2 pt-5 pb-5 w-100 ">
+                      <option >Web Development</option>
+                      <option value="1">Mobile Design</option>
+                      <option value="2">Data Science</option>
+                    </select>
+
+                  </div>
+
+                  <label for="" class=" ms-0 fs-5 fw-bold">Urgency</label>
+
+                  <div class="first  d-flex flex-column gap-2">
+                    <select class=" SelectOpt p-2 pt-5 pb-5 w-100 ">
+                    <option selected>All Urgency Level</option>  
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
-                  </select>
+                    </select>
 
-                  <label for="" class="pb-5  ms-0">Urgency</label>
-                  <select class="custom-select ps-3 pt-2 pb-5">
-                    <option value="all">All urgency levels</option>
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                  </select>
+                  </div>
 
-                  <select
-                    class="custom-select ps-3 pt-5 pb-5"
-                    placceholder="React, Figma, Git/Github"
-                  >
-                    <option value="all">All urgency levels</option>
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                  </select>
-
-
-                  <label for="" class="pb-5 ms-0">Skills</label>
+                  <label for="" class=" ms-0 fs-5 fw-bold">Skills</label>
                   
-                  <p class=" pb-5 ms-0 bg-white mt-2 mb-2" >React , Figma , Git/Github</p>
+                  <input class="fs-4 opacity-75 w-100 pt-5 pb-5 SelectOpt ps-3 " placeholder="React , Figma , Git/Github"></input>
+
+                  <label for="" class=" ms-0 fs-5 fw-bold">Location</label>
+                  <input class="fs-4 opacity-75 w-100 pt-5 pb-5 SelectOpt ps-3" placeholder="Karachi , Lahore , Remote"></input>
                   
-                  <p  class=" pb-5 ms-0 bg-white mt-5 mb-5"   >Karachi , Lahore , Remote"</p>
                 </div>
-              </div>
+
+
+
+              <!-- </div> -->
             </div>
             <!-- Right -->
-            <div class="col-md-7 d-flex flex-column justify-content-between gap-4 h-100 ">
+            <div class="d-flex flex-column justify-content-between gap-4 h-100 ">
               <div class="card post">
                 <div class="tag-container">
                   <span class="tag status-solved">Web Development</span>
@@ -198,9 +197,9 @@
       </div>
     </div>
 
-    </div>
+   
 
-    </div>
+    
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

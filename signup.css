@@ -1,72 +1,115 @@
-        * {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 
-        body {
-            min-height: 100vh;
-            background: #f8f9fa;
-            overflow-x: hidden;
-        }
 
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+body{
+  /* height: 100%; */
 
-        .brand-circle {
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, #477c6a, #07b07b);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            font-weight: 600;
-            font-size: 14px;
-        }
+  min-height: 100vh;
 
-        .brand strong {
-            font-size: 15px;
-            font-weight: 600;
-            color: #111827;
-        }
+    background-image: 
+    linear-gradient(to bottom right, #e0e9dc, transparent), /* Top Left */
+    linear-gradient(to bottom left, #f6e4c9, transparent),  /* Top Right */
+    linear-gradient(to top right, #efe7da, transparent),    /* Bottom Left */
+    linear-gradient(to top left, #efe7da, transparent);     /* Bottom Right */
 
-        .custom-nav {
-            margin-top: 5px;
-            margin-bottom: 40px;
-            padding: 5px 5px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            margin-bottom: 10px;
-            backdrop-filter: blur(10px);
-        }
+  background-position: 
+    top left, 
+    top right, 
+    bottom left, 
+    bottom right;
 
-        .nav-links {
-            display: flex;
-            align-items: center;
-        }
+  background-size: 100% ;
+  background-repeat: no-repeat;
 
-        .nav-links a {
-            font-size: 14px;
-            color: #6b7280;
-            font-weight: 500;
-            margin-left: 28px;
-            text-decoration: none;
-        }
+}
 
-        .nav-links a:hover {
-            color: #111827;
-            background: #d1fae5;
-            padding: 7px 16px;
-            border-radius: 20px;
-            font-weight: 500;
-        }
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on very small screens */
+    gap: 15px;
+    background-color: #f7f3e9;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.logo-icon {
+    
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #477c6a, #07b07b);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #9ea2a2;
+    border-radius: 50px;
+
+    
+    padding: 12px 25px;
+    font-weight: 600;
+}
+
+.nav-links a:hover{
+  background-color: #dce2d5;
+  color: #13ab9c;
+}
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         .main-container {
             min-height: calc(100vh - 65px);
@@ -76,7 +119,7 @@
             padding-left: 10%;
             padding-right: 10%;
             width: 100%;
-            background-color: rgb(245, 241, 235);
+           
         }
 
         .left-panel {
@@ -255,7 +298,7 @@
             font-size: 1.75rem;
             font-weight: 700;
             color: #111827;
-            margin-bottom: 32px;
+            margin-bottom: 16px;
         }
 
         .form-group {
@@ -422,7 +465,7 @@
             margin-left: 8px;
         }
 
-        .decoration-circle {
+        /* .decoration-circle {
             position: absolute;
             width: 200px;
             height: 200px;
@@ -442,7 +485,7 @@
             left: -50px;
             width: 150px;
             height: 150px;
-        }
+        } */
 
         @media (max-width: 992px) {
             .main-container {

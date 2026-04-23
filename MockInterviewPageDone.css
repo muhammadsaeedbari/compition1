@@ -1,0 +1,343 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+  
+  background: linear-gradient(#ecf6c1c7,#f6e6ca87,#f6e6caa1);
+
+    background-image: 
+    linear-gradient(to bottom right, #e0e9dc, transparent), /* Top Left */
+    linear-gradient(to bottom left, #f6e4c9, transparent),  /* Top Right */
+    linear-gradient(to top right, #efe7da, transparent),    /* Bottom Left */
+    linear-gradient(to top left, #efe7da, transparent);     /* Bottom Right */
+
+  background-position: 
+    top left, 
+    top right, 
+    bottom left, 
+    bottom right;
+
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+  
+}
+
+
+.my-container{
+  /* min-height: calc(100dvh - 80px); */
+  height: auto;
+  border-radius: 25px;
+  height:  300px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on very small screens */
+    gap: 15px;
+    background-color: #f7f3e9;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.logo-icon {
+    
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #477c6a, #07b07b);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #9ea2a2;
+    border-radius: 50px;
+
+    
+    padding: 12px 25px;
+    font-weight: 600;
+}
+
+.trust{
+  text-align: center;
+    text-decoration: none;
+    color: #9ea2a2;
+    border: 0px;
+    border-radius: 50px;
+
+    font-weight: 600;
+}
+
+.nav-links a:hover , .notificationbtn:hover , .trust:hover{
+  background-color: #dce2d5;
+  color: #13ab9c;
+}
+
+.helper-item span{
+  background-color: #ecf2f0;
+  color: #3fa592;
+  
+  
+}
+
+
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr; /* Creates the wide and narrow columns */
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Base Card Styling */
+.card {
+  background: #fefaf1 !important;  /* Off-white card background */
+  
+  border-radius: 28px; /* Smooth rounded corners */
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Soft, subtle shadow */
+  border-radius: 25px !important;
+  
+}
+
+.actions{
+  height: 100%;
+
+
+}
+/* Content Elements */
+h3 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+
+.profile-header{
+  margin:30px;
+  padding:40px;
+  padding-left: 30px !important;
+  border-radius:20px;
+  background:linear-gradient(to right,#1c2b2e,#2f3f42);
+  color:white;
+}
+
+.profile-header-button .one {
+  color: #2d6b62;
+  background: #243a3a;
+  border-radius: 50px;
+   padding: 7px;
+}
+
+
+.profile-header-button .two{
+  color: #447174;
+  background: #253d3d;
+  border-radius: 50px;
+   padding: 7px;
+  /* background: linear-gradient(to right, #214c4e , #408386 ); */
+}
+
+.profile-header-button .three{
+  color: #3c835b;
+  background-color: #203d3d;
+  border-radius: 50px;
+  padding: 7px;
+  /* background: linear-gradient(to right,  #156d3b,  #29814f ); */
+}
+
+
+.profile-header h1{
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.profile-header .first{
+    letter-spacing: 2px;
+    color: #eff0f0;
+}
+
+.profile-header p{
+    color: #9ea2a2;
+}
+
+
+.green{
+    color: #1d867c;
+    font-weight: 550;
+    letter-spacing: 0.1rem;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag {
+  background: #e9f2ee; /* Light green pill color */
+  color: #46967c;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #007c6d; /* Teal button color */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: red;
+  
+  border: none;
+  border-radius: 25px;
+  padding: 8px;
+  font-weight: bold;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.helper-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.helper-info{
+  display: flex;
+  
+}
+
+.avatar{
+  background: linear-gradient(135deg, #fa8e58 0%, #ffc891 100%);
+  height: 40px;
+  width: 40px;
+  padding: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  border-radius: 50%; /* Makes it a circle like your image */
+}
+
+.buttonSave{
+  background:linear-gradient(to right,#486f77c8,#13ab9c);
+  color:white;
+  border:none;
+  border-radius: 25px !important;
+  font-weight: 600;
+  box-shadow: 0 5px 10px #b5ddd9;
+}
+
+.buttonSolved{
+  background: white;
+  
+  color: black;
+  font-weight: 700;
+  border:none;
+  border-radius: 25px !important;
+  font-weight: 600;
+}
+
+.buttonSolved:hover{
+  background: white;
+  
+  color: black;
+  font-weight: 700;
+  border:none;
+  border-radius: 25px !important;
+  font-weight: 600;
+  box-shadow: 0 5px 10px #90cec8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive area */
+@media (max-width: 992px){
+  .my-container{
+    grid-template-columns: 1fr;
+  }
+  .nav-container h2{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px){
+  .profile-header{
+    margin: 15px;
+    padding: 25px;
+  }
+
+  .profile-header h1{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px){
+  .heading-content h2{
+    font-size: 1.5rem;
+  }
+}
+
+/* responsive area */

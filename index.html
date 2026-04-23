@@ -5,40 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HelpHub AI</title>
-    <link rel="stylesheet" href="home.css">
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">
-            <span class="logo-icon">H</span>
-            <span>HelpHub AI</span>
+     <nav class="navbar">
+        <div class="container nav-containe logo">
+       <div class="d-flex align-items-center m-0 gap-2">
+          <h2 class="logo-icon m-0">H</h2>
+          <strong>HelpHub AI</strong>
         </div>
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="explore.html">Explore</a>
-            <a href="leader.html">Leaderboard</a>
-            <a href="AI Center.html">AI Center</a>
-        </nav>
-        <button class="btn">Join the platform</button>
-    </header>
+        <div class="nav-links">
+            <a href="index.html" active>Home</a>
+            <a href="exploreDone.html">Explore</a>
+            <a href="leaderDone.html">Leaderboard</a>
+            <a href="AiCenterDone.html">AI Center</a>
+        </div>
+        <div class="buttondiv d-flex gap-2">
+            <button class="navbtnwhite">Live community signals</button>
+            <button class="buttonSave">Join the platform</button>
+            
+        </div>
+        </div>
+    </nav>
+ 
+
+     
+  
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero container p-0">
         <div class="left">
             <h1>Find help faster.<br>Become help that matters.</h1>
             <p>HelpHub Al is a community-powered support network for students, mentors, creators, and builders. Ask for
                 help, offer help, track impact, and let Al surface smarter matches across the platform</p>
             <div class="buttons">
-                <button class="primary">Open product demo</button>
-                <button class="secondary">Post a request</button>
+                <button class="buttonSave">Open product demo</button>
+                <button class="whitebtn">Post a request</button>
             </div>
 
             <div class="stats">
                 <div>
-                    <h3>Members</h3>
+                    <span class="green">Members</span>
                     <p>384+</p>
                     <span>
                         Students, mentors, and helpers in the
@@ -46,12 +61,12 @@
                     </span>
                 </div>
                 <div>
-                    <h3>Requests</h3>
+                    <span class="green">Requests</span>
                     <p>72+</p>
                     <span>Support posts shared accross learning journeys</span>
                 </div>
                 <div>
-                    <h3>Solved</h3>
+                    <span class="green">Solved</span>
                     <p>69+</p>
                     <span>
                         Problem resolved through fast community action
@@ -61,6 +76,7 @@
         </div>
 
         <div class="right">
+            <div class="yellow-circle"></div>
             <h2>More than a form.<br>More like an ecosystem.</h2>
             <p class="right-para">A polished multi-page experience inspired by product platforms, with Al summaries,
                 trust scores,
@@ -73,9 +89,7 @@
             </div>
             <div class="card">
                 <h3>Community trust graph</h3>
-                <p>Badges, helper rankings, trust score boosts.
-
-                    and visible contribution history.</p>
+                <p>Badges, helper rankings, trust score boosts. and visible contribution history.</p>
             </div>
             <div class="card">
                 <h3>100% trust score</h3>
@@ -85,8 +99,8 @@
     </section>
 
     <!-- CORE FLOW -->
-    <section class="core">
-        <h4>CORE FLOW</h4>
+    <section class="core container">
+        <span class="green">CORE FLOW</span>
         <h2>From struggling alone to solving together</h2>
         <div class="grid">
             <div class="box">
@@ -106,7 +120,7 @@
             </div>
         </div>
     </section>
-    <section class="requests">
+    <section class="mt-5 container">
 
         <div class="top">
             <div>
@@ -121,7 +135,7 @@
             <!-- CARD 1 -->
             <div class="card">
                 <div class="tags">
-                    <span class="tag green">Web Development</span>
+                    <span class="tag green1">Web Development</span>
                     <span class="tag red">High</span>
                     <span class="tag light-green">Solved</span>
                 </div>
@@ -203,6 +217,20 @@
         </p>
 
     </section>
-</body>
 
+
+
+
+    
+</body>
+ <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"
+  ></script>
 </html>
