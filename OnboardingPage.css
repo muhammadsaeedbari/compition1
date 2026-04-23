@@ -1,0 +1,119 @@
+body {
+   background: linear-gradient(#e6ebd4c7,#f6e6ca87,#f6e6caa1);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.onboarding-container {
+     background-image: 
+    linear-gradient(to bottom right, #e0e9dc, #e2e6e0); /* Top Left */
+    
+  
+  
+  background-repeat: no-repeat;
+
+
+
+
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    color: #0f172a;
+}
+
+.step { display: none; }
+.step.active { display: block; animation: fadeIn 0.5s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.icon { font-size: 50px; margin-bottom: 20px; }
+
+.btn {
+  width:100%;
+  padding:12px;
+  background:linear-gradient(to right,#4a7a85c8,#13ab9c);
+  color:white;
+  border:none;
+  border-radius: 25px !important;
+  font-weight: 600;
+  
+}
+
+
+.btn:hover {
+  width:100%;
+  padding:12px;
+  background:linear-gradient(to right,#4a7a85c8,#13ab9c);
+  color:white;
+  border:none;
+  border-radius: 25px !important;
+  font-weight: 600;
+   box-shadow: 0 5px 10px #b5ddd9;
+}
+
+.role-cards {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    border: 2px solid #334155;
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.card:hover, .card.selected {
+    /* border-color: #3b82f6; */
+    background: #bcc2b5;
+    
+     color: #13ab9c;
+    font-weight: 550;
+    /* letter-spacing: 0.1rem; */
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.skills-grid span:hover{
+     background:linear-gradient(to right,#4a7a85c8,#13ab9c);
+    color: white;
+}
+
+.skill-tag {
+      background: #f6f7f5;
+    
+     color: #13ab9c;
+    font-weight: 550;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.skill-tag.selected {
+    background:linear-gradient(to right,#4a7a85c8,#13ab9c);
+    color: white;
+    border-color: white;
+}
+
+
